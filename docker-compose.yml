@@ -1,0 +1,13 @@
+version: '3'
+services:
+  proxy:
+    build: .
+    networks:
+      - applications
+    ports:
+      - 80:80
+      - 443:443
+networks:
+  applications:
+    name: applications
+    external: true
