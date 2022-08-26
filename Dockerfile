@@ -1,9 +1,9 @@
 FROM nginx
 
-COPY ./default.conf /etc/nginx/conf.d/default.conf
+COPY ./config/default.conf /etc/nginx/conf.d/default.conf
 
-COPY ./backend-not-found.html /var/www/html/backend-not-found.html
+COPY ./pages/ /var/www/pages/
 
-COPY ./includes/ /etc/nginx/includes/
+COPY ./config/proxy.conf /etc/nginx/includes/proxy.conf
 
-COPY ./ssl/ /etc/ssl/certs/nginx/
+COPY ./ssl/certs/ /etc/ssl/certs/nginx/
