@@ -1,1 +1,0 @@
-SECRET_DOCKER_VALUE=docker_secret
