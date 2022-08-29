@@ -6,4 +6,4 @@ COPY ./pages/ /var/www/pages/
 
 COPY ./config/proxy.conf /etc/nginx/includes/proxy.conf
 
-COPY ./ssl/certs/ /etc/ssl/certs/nginx/
+COPY ../../_includes/ssl/certs/ /etc/ssl/certs/nginx/
